@@ -1,0 +1,964 @@
+:root {
+  --color_morado: #DB0455;
+  --color_gris: #707070;
+  --color_yellow: #FFBE00;
+  --color_light_morado: #DF6895;
+}
+
+
+/*-------------------------------contenendor de video -------------------------------*/
+.isi__video {
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    position: relative;
+}
+.isi__video video {
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------contenendor de video -------------------------------*/
+
+
+
+
+.isi__contenedor {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+
+
+/*-----------------------Misión y Visión-------------------------*/
+.isi__MyV {
+    display: flex;
+    flex-wrap: wrap;
+}
+.isi__MyV .isi__nosotros  {
+    width: 50%;
+    padding: 0 20px;
+}
+.isi__MyV .isi__nosotros h1 {
+    letter-spacing: 3px;
+    color: var(--color_gris);
+    margin-bottom: 50px;
+}
+.isi__MyV .isi__nosotros .isi__tabs {
+    list-style: none;
+    display: flex;
+}
+.isi__MyV .isi__nosotros .isi__tabs li {
+    border: 1px solid var(--color_yellow);
+    flex-grow: 1;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    transition: all .5s;
+}
+.isi__MyV .isi__nosotros .isi__tabs li::after {
+    position: absolute;
+    content: '';
+    bottom: -20px;
+    border: 10px solid transparent;
+    left: 50%;
+    margin-left: -5px;
+    transition: all .5s ease-out;
+}
+.isi__MyV .isi__nosotros .isi__tabs li:hover:after {
+     border-top-color: var(--color_yellow);
+}
+.isi__MyV .isi__nosotros .isi__tabs li.isi__tab_active {
+    background: var(--color_yellow);
+    color: #fff;
+}
+.isi__MyV .isi__nosotros .isi__tabs li.isi__tab_active a {
+    color: white;
+}
+.isi__MyV .isi__nosotros .isi__tabs li.isi__tab_active:after {
+    border-top-color: var(--color_yellow);
+}
+.isi__MyV .isi__nosotros .isi__tabs li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: var(--color_gris);
+}
+.isi__MyV .isi__nosotros .isi__tabs_content {
+    padding: 50px 20px;
+    overflow: hidden;
+}
+.isi__MyV .isi__nosotros .isi__tab_pane {
+    display: none;
+}
+.isi__MyV .isi__nosotros .isi__tab_pane.active {
+    display: block;
+}
+.isi__MyV .isi__nosotros .isi__tab_pane p {
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    color: var(--color_gris);
+}
+.isi__MyV .isi__nosotrosImg  {
+    width: 50%;
+    display: flex;
+    position: relative;
+}
+.isi__MyV .isi__nosotrosImg .isi__margenImg {
+     width: 80%;
+    margin: auto;
+    border: 2px solid rgba(219,4,85, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+.isi__MyV .isi__nosotrosImg img {
+    width: 100%;
+    border: 1px solid rgba(255,190,0, 0.2);
+    border-radius: 10px;
+}
+.isi__MyV .isi__nosotrosImg span {
+    background: var(--color_morado);
+    position: absolute;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright; 
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    top: 50%;
+    padding: 15px;
+    left: 20px;
+}
+/*-----------------------Misión y Visión-------------------------*/
+
+
+
+/*----------------------Proyectos--------------------------------*/
+.isi__proyectosBody {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.isi__proyectosBody .isi__proyectos  {
+    width: 50%;
+}
+.isi__proyectosBody .isi__proyectos h1 {
+    letter-spacing: 3px;
+    color: var(--color_gris); 
+    margin-bottom: 50px;
+}
+.isi__proyectosBody .isi__proyectos .isi__proyectos_content {
+    display: flex;
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo {
+    display: flex;
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo p {
+    padding: 0 15px 0 0;
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo span {
+    display: block;
+    text-align: center;
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo span:first-child {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color_gris);
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo span:last-child {
+    font-size: 40px;
+    color: var(--color_morado);
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo p:last-child {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color_gris);
+    position: relative;
+}
+.isi__proyectosBody .isi__proyectos .isi__ciclo p:last-child:after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 160px;
+    top: 0;
+    right: 0;
+    background: var(--color_yellow);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto {
+    padding: 0 40px;
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto h3 {
+    color: var(--color_gris);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto p {
+    color: var(--color_gris);
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto div {
+    border: 1px solid var(--color_yellow);  
+    width: 130px;
+    padding: 8px;
+    text-align: center;
+    transition: all .3s;
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto div:hover {
+    background: var(--color_yellow);
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto div:hover a {
+    color: white;
+}
+.isi__proyectosBody .isi__proyectos .isi__proyecto a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color_gris);
+
+}
+.isi__proyectosBody .isi__proyecto_img {
+    width: 50%;
+}
+.isi__proyectosBody .isi__proyecto_img img {
+    width: 70%;
+}
+.isi__proyectosBody .isi__indicadores {
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    left: 50%;
+    margin-left: -90px;
+}
+.isi__proyectosBody .isi__indicadores .isi__arrows {
+    padding: 10px;
+}
+.isi__proyectosBody .isi__indicadores .isi__arrows a {
+    font-size: 40px;
+    color: var(--color_gris);
+}
+.isi__proyectosBody .isi__indicadores .isi__points:before {
+    position: absolute;
+    content: '';
+    width: 280px;
+    height: 4px;
+    background: var(--color_yellow);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    margin-top: -10px;
+}
+.isi__proyectosBody .isi__indicadores .isi__points {
+    display: flex;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+.isi__proyectosBody .isi__indicadores .isi__points input[type="radio"] {
+    display: none;
+}
+.isi__proyectosBody .isi__indicadores .isi__points input[type="radio"] + label {
+    position: relative;
+    z-index: 50;
+    margin: 10px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: var(--color_morado);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.isi__proyectosBody .isi__indicadores .isi__points input[type="radio"]:checked + label {
+    background: var(--color_yellow);
+}
+/*----------------------fin de Proyectos--------------------------------*/
+
+/*------------------------Eventos ---------------------------------*/
+.isi__eventos h1 {
+    color: var(--color_gris);
+     letter-spacing: 3px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+.isi__eventos .isi__carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.isi__eventos .isi__carousel_left, .isi__eventos .isi__carousel_right {
+    width: 5%;
+    height: 120px;
+    background: var(--color_gris);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.isi__eventos .isi__carousel_left {
+    left: 0;
+}
+.isi__eventos .isi__carousel_right {
+    right: 0;
+}
+.isi__eventos .isi__carousel_left a, .isi__carousel_right a {
+    font-size: 50px;
+    color: white;
+}
+.isi__eventos .isi__carousel_item {
+    display: flex;
+    width: 90%;
+    margin: auto;
+} 
+.isi__eventos .isi__carousel_item .isi__caro {
+    flex-grow: 1;
+    display: flex;
+    height: 100px;
+    padding: 0px 10px;
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__almanac {
+    width: 35%;
+    border: 1px solid var(--color_morado);
+    text-align: center;
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__almanac .isi__day{
+    width: 100%;
+    background: var(--color_morado);
+    color: white;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__almanac .isi__date {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--color_morado);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__almanac .isi__month {
+    font-size: 14px;
+    color: var(--color_gris);
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content {
+    width: 65%;
+    padding: 0 10px;;
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content:hover {
+    background: rgba(112,112,112,0.1);
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content .isi__title {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color_gris);
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content .isi__description {
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 0;
+    color: var(--color_gris);
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content .isi__description span {
+    color: var(--color_yellow);
+    padding-right: 5px;
+    font-size: 13px;
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content .isi__link {
+    font-size: 13px;
+    
+}
+.isi__eventos .isi__carousel_item .isi__caro .isi__content .isi__link a {
+    text-decoration: none;
+    color: var(--color_gris);
+}
+/*------------------------fin de Eventos ---------------------------------*/
+
+
+
+/*-----------------------Laboratorios------------------------------------*/
+.isi__laboratorios .isi__laboratorio {
+    width: 100%;
+    display: flex;
+}
+.isi__laboratorios h1 {
+    color: var(--color_gris);
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    width: 50%;
+    
+}
+.isi__laboratorios .isi__labotabs {
+    list-style: none;
+} 
+.isi__laboratorios .isi__labotabs li {
+    writing-mode: vertical-rl;
+    text-orientation: upright; 
+    border: 1px solid var(--color_morado);
+    padding: 10px 5px;
+    position: relative;
+        transition: all .5s;
+}
+.isi__laboratorios .isi__labotabs li a {
+    text-decoration: none; 
+    color: var(--color_gris);
+    font-weight: bold;
+    font-size: 15px;
+}
+.isi__laboratorios .isi__labotabs li:after {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    top: 50%;
+    margin-top: -10px;
+    right: -20px;
+    transition: all .5s ease-out;
+}
+.isi__laboratorios .isi__labotabs li:hover:after {
+        border-left-color: var(--color_morado);
+}
+.isi__laboratorios .isi__labotabs li.isi__active:after {
+    border-left-color: var(--color_morado);
+}
+.isi__laboratorios .isi__labotabs li.isi__active {
+    background: var(--color_morado);
+}
+.isi__laboratorios .isi__labotabs li.isi__active a {
+    color: white;
+} 
+.isi__laboratorios .isi__pane {
+    padding: 0 20px;
+    overflow: hidden;
+}
+.isi__laboratorios .isi__pane .isi__laboPane {
+    display: none;
+}
+.isi__laboratorios .isi__pane .isi__labo_content {
+   display: flex;
+}
+.isi__laboratorios .isi__pane .isi__labo_content >div {
+    width: 50%;
+}
+.isi__laboratorios .isi__pane .isi__vd_laboratorio {
+    width: 50%;
+    padding: 0 20px;
+}
+.isi__laboratorios .isi__pane .isi__vd_laboratorio video {
+    width: 100%;
+}
+.isi__laboratorios .isi__pane .isi__pane_active {
+    display: block;
+}
+.isi__laboratorios .isi__pane h2, .isi__laboratorios .isi__pane h4 {
+    color: var(--color_morado);
+
+}
+.isi__laboratorios .isi__pane h2, .isi__laboratorios .isi__pane h4, .isi__laboratorios .isi__pane p, .isi__laboratorios .isi__pane .isi__link {
+    direction: rtl;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.isi__laboratorios .isi__pane p {
+    font-size: 15px;
+}
+.isi__laboratorios .isi__pane p {
+    color: var(--color_gris);
+}
+.isi__laboratorios .isi__pane .isi__link div {
+  background-position: center;
+  transition: background 0.8s;
+}
+.isi__laboratorios .isi__pane .isi__link div:hover {
+  background: var(--color_morado) radial-gradient(circle, transparent 1%, var(--color_morado) 1%) center/15000%;
+}
+.isi__laboratorios .isi__pane .isi__link div:active {
+  background-color: var(--color_light_morado);
+  background-size: 100%;
+  transition: background 0s;
+}
+.isi__laboratorios .isi__pane .isi__link div {
+  border-radius: 2px;
+  padding: 15px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--color_morado);
+    width: 100px;
+    text-align: center;
+}
+
+/*-----------------------fin de Laboratorios------------------------------------*/
+
+
+/*-----------------------noticias----------------------------------*/
+
+.isi__noticias h1 {
+    color: var(--color_gris);
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+.isi__noticias .isi__noticia {
+    display: flex;
+}
+.isi__noticias .isi__noticion {
+    width: 40%;
+}
+.isi__noticias .isi__noticion .isi__noticia_header {
+    display: flex;
+    justify-content: space-between;
+    border-left: 10px solid var(--color_yellow);
+    padding: 15px 0;
+    color: var(--color_gris);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.isi__noticias .isi__noticion .isi__noticia_header span:first-child {
+    margin-left: 10px;
+}
+.isi__noticias .isi__noticion .isi__noticia_body {
+    padding: 40px 0;
+    background: var(--color_yellow)
+}
+.isi__noticias .isi__noticion .isi__noticia_body img {
+    width: 100%;
+}
+.isi__noticias .isi__noticion .isi__noticia_footer {
+    color: var(--color_gris);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.isi__noticias .isi__noticion .isi__noticia_footer div {
+    border: 2px solid var(--color_yellow);
+    padding: 5px 10px;
+    text-align: center;
+    width: 150px;
+    transition: all .3s;
+}
+.isi__noticias .isi__noticion .isi__noticia_footer div:hover {
+    background: var(--color_yellow);
+}
+.isi__noticias .isi__noticion .isi__noticia_footer div:hover a {
+    color: #fff;
+}
+.isi__noticias .isi__noticion .isi__noticia_footer a {
+    text-decoration: none;
+    color: var(--color_gris);
+    font-size: 15px;
+}
+.isi__noticias .isi__noticitas {
+    width: 60%;
+    padding: 50px 20px;
+}
+.isi__noticias .isi__noticitas .isi__noticita {
+    display: flex;
+    border-bottom: .5px solid var(--color_morado);
+    margin-bottom: 20px;
+}
+.isi__noticias .isi__noticitas .isi__noticita:hover {
+    background: rgba(0,0,0,0.05);
+}
+.isi__noticias .isi__noticitas  .isi__noticitaImg {
+    padding: 20px 10px;
+}
+.isi__noticias .isi__noticitas .isi__noticita img {
+    width: 120px;
+    height: 120px;
+}
+.isi__noticias .isi__noticitas .isi__noticita .isi__noticitaContent {
+    padding: 20px;
+}
+.isi__noticias .isi__noticitaContent .isi__noticita_header {
+    color: var(--color_gris);
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+.isi__noticias .isi__noticitaContent .isi__noticita_header span:first-child {
+    font-weight: bold;
+}
+.isi__noticias .isi__noticitaContent .isi__noticita_header span:last-child {
+   font-size: 14px;
+}
+.isi__noticias .isi__noticitaContent .isi__noticita_body{
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: var(--color_gris);
+    margin-bottom: 10px;
+}
+
+.isi__noticias .isi__noticitaContent .isi__noticita_footer  a {
+    text-decoration: none;
+    color: #fff;
+    background: var(--color_morado);
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+/*-----------------------fin de noticias----------------------------------*/
+
+
+
+/*---------------docentes ------------------------------------*/
+.isi__fondoImg {
+    display:table;
+    width:100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) ), url('img/docentes.jpg');
+    background-position:center top;
+    height:350px;
+    position: relative;
+    z-index: 0;
+}
+.ini__docente {
+    display: flex;
+    margin-top: -100px;
+    position: relative;
+}
+.ini__docente .ini__text p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.ini__docente .ini__text p:last-child {
+    border: 2px solid rgba(219, 4, 85, 0.5);
+    margin-top: 30px;
+    padding: 20px 30px;
+    color: var(--color_gris);
+    font-size: 15px;
+}
+.ini__docenteImg img {
+    width: 250px;
+    height: 250px;
+    border-radius:50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    margin-left: 50px;
+}
+/*---------------fin de docentes ------------------------------------*/
+
+@media only screen and (max-width: 1024px) {
+    .isi__contenedor {
+        width: 90%;
+    }
+    
+    .isi__eventos .isi__carousel_left, .isi__eventos .isi__carousel_right {
+        width: 3%;
+    }
+    .isi__eventos .isi__carousel_item {
+        width: 94%;
+    }
+    .isi__eventos .isi__carousel_item .isi__caro {
+        height: 120px;
+        padding: 0px 5px;
+    }
+    .isi__eventos .isi__carousel_item .isi__caro .isi__content {
+        padding: 0 5px;
+    }
+
+    .isi__laboratorios .isi__pane h2, .isi__laboratorios .isi__pane h4, .isi__laboratorios .isi__pane p, .isi__laboratorios .isi__pane .isi__link {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .isi__contenedor {
+        width: 90%;
+        padding: 30px 0;
+    }
+    
+    .isi__MyV .isi__nosotros  {
+        width: 60%;
+        padding: 0px;
+    }
+    .isi__MyV .isi__nosotros h1 {
+        margin-bottom: 30px;
+    }
+    .isi__MyV .isi__nosotros .isi__tabs li {
+        padding: 10px;
+        transition: all .5s;
+    }
+    .isi__MyV .isi__nosotros .isi__tabs_content {
+        padding: 30px 10px;
+    }
+    .isi__MyV .isi__nosotros .isi__tab_pane p {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .isi__MyV .isi__nosotrosImg  {
+        width: 40%;
+    }
+    .isi__MyV .isi__nosotrosImg .isi__margenImg {
+        width: 90%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .isi__MyV .isi__nosotrosImg img {
+        border-radius: 5px;
+    }
+    .isi__MyV .isi__nosotrosImg span {
+        display: none;
+    }
+    
+    .isi__proyectosBody .isi__proyectos  {
+        width: 60%;
+    }
+    .isi__proyectosBody .isi__proyectos h1 {
+        margin-bottom: 30px;
+    }
+    .isi__proyectosBody .isi__proyectos .isi__proyecto {
+        padding: 0 20px;
+    }
+    .isi__proyectosBody .isi__proyecto_img {
+        width: 40%;
+    }
+    .isi__proyectosBody .isi__proyecto_img img {
+        width: 100%;
+    }
+    .isi__proyectosBody .isi__indicadores {
+        left: 60%;
+    }
+    
+    .isi__eventos h1 {
+        margin-bottom: 30px;
+    }
+    .isi__eventos .isi__carousel_left, .isi__eventos .isi__carousel_right {
+        width: 5%;
+    }
+    .isi__eventos .isi__carousel_item {
+        width: 90%;
+    } 
+    .isi__eventos .isi__carousel_item .isi__caro:last-child {
+        display: none;
+    }
+    .isi__eventos .isi__carousel_item .isi__caro .isi__almanac {
+        width: 35%;
+    }
+    .isi__eventos .isi__carousel_item .isi__caro .isi__content {
+        width: 65%;
+    }
+    
+    .isi__laboratorios h1 {
+        margin-bottom: 30px;
+    }
+    .isi__laboratorios .isi__pane .isi__labo_content > div {
+        width: 60%;
+    }
+    .isi__laboratorios .isi__pane .isi__vd_laboratorio {
+        width: 40%;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+    .isi__laboratorios .isi__pane p {
+        font-size: 14px;
+    }
+    .isi__laboratorios .isi__pane .isi__link div {
+      padding: 10px 10px;
+      font-size: 14px;
+    }
+    
+    .isi__noticias h1 {
+        margin-bottom: 30px;
+    }
+    .isi__noticias .isi__noticion .isi__noticia_footer {
+        font-size: 15px;
+    }
+    .isi__noticias .isi__noticitas {
+        padding: 30px 10px;
+    }
+    .isi__noticias .isi__noticitas  .isi__noticitaImg {
+        padding: 20px 0px;
+    }
+    .isi__noticias .isi__noticitas .isi__noticita .isi__noticitaContent {
+        padding: 10px;
+    }
+    .isi__noticias .isi__noticitaContent .isi__noticita_header {
+        font-size: 15px;
+    }
+    .isi__noticias .isi__noticitaContent .isi__noticita_body{
+        font-size: 14px;
+    }
+    .isi__noticias .isi__noticitaContent .isi__noticita_footer  a {
+        padding: 5px 10px;
+    }
+    
+    .ini__docente {
+        margin-top: -150px;
+    }
+    .ini__docente .ini__text p:last-child {
+        padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .isi__contenedor {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .isi__MyV .isi__nosotros  {
+        width: 100%;
+    }
+    .isi__MyV .isi__nosotros h1 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .isi__MyV .isi__nosotros .isi__tabs_content {
+        padding: 30px;
+    }
+    .isi__MyV .isi__nosotros .isi__tab_pane p {
+        letter-spacing: 2px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .isi__MyV .isi__nosotrosImg  {
+        width: 100%;
+    }
+    .isi__MyV .isi__nosotrosImg .isi__margenImg {
+        width: 70%;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .isi__MyV .isi__nosotrosImg img {
+        border-radius: 10px;
+    }
+    .isi__MyV .isi__nosotrosImg span {
+        display: block;
+        margin-top: -60px;
+        left: 50px;
+    }
+    
+    .isi__proyectosBody .isi__proyectos  {
+        width: 100%;
+    }
+    .isi__proyectosBody .isi__proyectos h1 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .isi__proyectosBody .isi__proyecto_img {
+        width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .isi__proyectosBody .isi__proyecto_img img {
+        width: 300px;
+    }
+    .isi__proyectosBody .isi__indicadores {
+        bottom: -20px;
+        left: 50%;
+    }
+    
+    .isi__eventos h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .isi__eventos .isi__carousel_left, .isi__eventos .isi__carousel_right {
+        width: 10%;
+    }
+    .isi__eventos .isi__carousel_item {
+        width: 70%;
+    } 
+    .isi__eventos .isi__carousel_item .isi__caro:first-child  {
+        display: none;
+    }
+    
+    .isi__laboratorios h1 {
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .isi__laboratorios .isi__pane .isi__labo_content {
+        flex-wrap: wrap;
+    }
+    .isi__laboratorios .isi__pane .isi__labo_content >div {
+        width: 100%;
+    }
+    .isi__laboratorios .isi__pane .isi__vd_laboratorio {
+        width: 100%;
+        padding: 0px
+    }
+    
+    .isi__noticias h1 {
+        text-align: center;
+        width: 100%;
+    }
+    .isi__noticias .isi__noticia {
+        flex-wrap: wrap;
+    }
+    .isi__noticias .isi__noticion {
+        width: 100%;
+    }
+    .isi__noticias .isi__noticitas {
+        width: 100%;
+    }
+    
+    .isi__fondoImg {
+        height:300px;
+    }
+    .ini__docente {
+        margin-top: -180px;
+    }
+    .ini__docenteImg img {
+        width: 150px;
+        height: 150px;    
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .isi__contenedor {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .isi__MyV .isi__nosotros .isi__tabs_content {
+        padding: 20px;
+    }
+    .isi__MyV .isi__nosotros .isi__tab_pane p {
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+    .isi__MyV .isi__nosotrosImg .isi__margenImg {
+        width: 90%;
+    }
+    .isi__MyV .isi__nosotrosImg span {
+        left: 0px;
+    }
+    
+    .isi__eventos .isi__carousel_item {
+        width: 80%;
+    }
+    
+    .isi__fondoImg {
+        height:200px;
+    }
+    .ini__docente {
+        margin-top: -150px;
+    }
+    .ini__docenteImg img {
+       display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

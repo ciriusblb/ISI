@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+:root {
+  --color_morado: #DB0455;
+  --color_gris: #707070;
+  --color_yellow: #FFBE00;
+  --color_light_morado: #DF6895;
+}
+
+
+@-webkit-keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+@keyframes ripple{
+    0%{
+        opacity:1;
+        -webkit-transform:scale(0);
+        transform:scale(0)
+    }
+    100%{
+        opacity:0;
+        -webkit-transform:scale(1);
+        transform:scale(1)
+    }
+}
+
+.pyts__contenedor {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+.pyts__fondo .pyts__vs {
+    width: 200px;
+    text-align: center;
+}
+.pyts__fondo .pinkBg {
+    background-color: transparent;
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #0d252b, #075652);
+}
+.pyts__fondo .intro-banner-vdo-play-btn{
+    height:60px;
+    width:60px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    margin:-30px 0 0 -30px;
+    border-radius:100px;
+    z-index:1;
+}
+.pyts__fondo .intro-banner-vdo-play-btn .ripple{
+    position:absolute;
+    width:160px;
+    height:160px;
+    z-index:-1;
+    left:50%;
+    top:50%;
+    opacity:0;
+    margin:-80px 0 0 -80px;
+    border-radius:100px;
+    -webkit-animation:ripple 1.8s infinite;
+    animation:ripple 1.8s infinite;
+}
+.pyts__fondo {
+    background: #172028;
+    height: 650px;
+    background-image: url(img/img_linhas.png);
+    background-size: 100% 500px;
+}
+.pyts__fondo h1 {
+    color: #a5b8b5;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.pyts__fondo > div {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    justify-content: center;
+}
+.pyts__fondo img {
+    width: 250px;
+}
+.pyts__fondo > div > div {
+    position: relative;
+}
+.pyts__fondo > div > div > div {
+    background: #0d252b;
+    border: 1px solid #075652;
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.pyts__body {
+    display: flex;
+    width: 100%;
+}
+.pyts__left {
+    width: 30%;
+}
+.pyts__left .pyts__filtros {
+    border: 2px solid rgba(255,190,0,0.2);
+    width: 200px;
+    padding: 10px;
+}
+.pyts__left .pyts__filtros .pyts__ciclos {
+    margin-bottom: 20px;
+}
+.pyts__left .pyts__filtros .pyts__ciclos select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(112,112,112,0.5);
+}
+.pyts__left .pyts__filtros .pyts__areas, .pyts__left .pyts__filtros .pyts__semestres {
+    margin-bottom: 20px;
+    color: var(--color_gris);
+
+}
+.pyts__left .pyts__filtros .pyts__areas h3, .pyts__left .pyts__filtros .pyts__semestres h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.pyts__left .pyts__filtros .pyts__semestres {
+    margin-bottom: 20px;
+}
+
+.pyts__right {
+    width: 80%;
+}
+.pyts__right .pyts__proyecto {
+    border: 1px solid rgba(255,190,0,0.2);
+    width: 100%;
+    display: flex;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.pyts__right .pyts__proyecto:hover {
+    cursor: pointer;
+}
+.pyts__right .pyts__proyecto .pyts__img {
+    width: 25%;
+    position: relative;
+}
+.pyts__right .pyts__proyecto .pyts__img img {
+    width: 100%;
+    height: 100%;
+}
+.pyts__right .pyts__proyecto .pyts__img span {
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    background: var(--color_morado);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.pyts__right .pyts__proyecto .pyts__img span:after {
+    position: absolute;
+    content: "";
+    border: 8px solid transparent;
+    border-right-color: var(--color_morado);
+    border-top-color: var(--color_morado);
+    left: 4px;
+    top: 27px;
+}
+.pyts__right .pyts__proyecto .pyts__content {
+    padding: 15px 30px;
+    color: var(--color_gris);
+    position: relative;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__titulo {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.pyts__right .pyts__proyecto .pyts__content hr {
+    width: 50%;
+    border: 1.5px solid var(--color_yellow);
+    margin-bottom: 10px;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__ponentes {
+    display: flex;
+    font-size: 15px;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__ponentes ul {
+    list-style: none;
+    margin-left: 10px;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__semestre {
+    display: flex;
+    align-items: center;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__semestre strong{
+    font-size: 60px;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__fecha {
+    font-size: 15px;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__fondoIcon {
+    position: absolute;
+    font-size: 150px;
+    color: #F9F8F8;
+    right: 10px;
+    bottom: 10px;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__type {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+}
+.pyts__right .pyts__proyecto .pyts__content:hover .pyts__span{
+    animation: swing ease-in-out 3s infinite alternate;
+}
+.pyts__right .pyts__type .pyts__robo, .pyts__right .pyts__type .pyts__serv, .pyts__right .pyts__type .pyts__info {
+    font-size: 14px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -30px; 
+    color: #fff;
+    border-radius: 5px;
+}
+.pyts__right .pyts__type .pyts__robo:after , .pyts__right .pyts__type .pyts__serv:after , .pyts__right .pyts__type .pyts__info:after {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color: var(--color_morado);
+    top: 0;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -8px;
+}
+.pyts__right .pyts__type .pyts__robo {
+    background: #ffb655;
+}
+.pyts__right .pyts__type .pyts__robo:after {
+    border-bottom-color: #ffb655;
+}
+.pyts__right .pyts__type .pyts__serv {
+    background: #424a60;
+}
+.pyts__right .pyts__type .pyts__serv:after {
+    border-bottom-color: #424a60;
+}
+.pyts__right .pyts__type .pyts__info {
+    background: #69cdff;
+}
+.pyts__right .pyts__type .pyts__info:after {
+    border-bottom-color: #69cdff;
+}
+.pyts__right .pyts__proyecto .pyts__content .pyts__type img {
+   height: 100px;
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    .pyts__contenedor {
+        width: 90%;
+    }
+    .pyts__fondo .pyts__vs {
+        width: 100px;
+    }
+    .pyts__fondo img {
+        width: 200px;
+    }
+    .pyts__fondo > div > div > div {
+        width: 200px;
+    }
+    
+    .pyts__right .pyts__proyecto {
+        height: 200px;
+    }
+    .pyts__right .pyts__proyecto .pyts__img {
+        width: 30%;
+    }
+    .pyts__right .pyts__proyecto .pyts__content {
+        padding: 10px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__titulo {
+        font-size: 16px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__ponentes {
+        font-size: 14px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__semestre strong{
+        font-size: 50px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__fecha {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .pyts__contenedor {
+        width: 90%;
+        padding: 30px 0;
+    }
+    
+    .pyts__fondo {
+        height: 550px;
+        background-size: 100% 400px;
+    }
+    .pyts__fondo h1 {
+        width: 90%;
+        padding-top: 80px;
+        letter-spacing: 1px;
+    }
+    .pyts__fondo > div {
+        height: 400px;
+    }
+    .pyts__fondo img {
+        width: 150px;
+    }
+    .pyts__fondo > div > div > div {
+        width: 150px;
+    }
+    
+    .pyts__left {
+        width: 25%;
+    }
+    .pyts__left .pyts__filtros {
+        width: 160px;
+        padding: 5px;
+    }
+    .pyts__right {
+        width: 75%;
+    }
+    .pyts__right .pyts__proyecto {
+        height: 150px;
+    }
+    .pyts__right .pyts__proyecto .pyts__img {
+        width: 35%;
+    }
+    .pyts__right .pyts__proyecto .pyts__img span {
+        display: none;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__titulo {
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content hr {
+        margin-bottom: 5px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__semestre strong{
+        font-size: 40px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__fecha {
+        display: none;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__type {
+        width: 50px;
+        height: 50px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__type img {
+       height: 50px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .pyts__contenedor {
+        width: 100%;
+        padding: 30px;
+    }
+    .pyts__fondo {
+        position: relative;
+    }
+     .pyts__fondo h1 {
+        width: 70%;
+        padding-top: 30px;
+        letter-spacing: 2px;
+    }
+    .pyts__fondo .pinkBg {
+    font-size: 30px;
+        width: 60px;
+    }
+    .pyts__fondo .intro-banner-vdo-play-btn{
+        height:40px;
+        width:40px;
+        margin:-30px 0 0 -20px;
+    }
+    .pyts__fondo > div {
+        display: flex;
+        justify-content: space-around;;
+        flex-wrap: wrap;
+    }
+    .pyts__fondo .pyts__versus2 {
+        display: none;
+    }
+    .pyts__fondo .pyts__versus1 {
+        position: absolute;
+        top: 60%;
+    }
+    .pyts__fondo img {
+        width: 200px;
+    }
+    .pyts__fondo > div > div > div {
+        width: 200px;
+    }
+    .pyts__fondo {
+        height: 650px;
+        background-size: 100% 650px;
+    }
+   
+    
+    .pyts__left {
+        width: 30%;
+    } 
+    .pyts__right .pyts__proyecto {
+        width: 90%;
+        display: block;
+        height: 370px;
+        margin-bottom: 20px;
+        position: relative;
+        float: right;
+    }
+    .pyts__right .pyts__proyecto .pyts__img {
+        width: 50%;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__titulo {
+        font-size: 16px;
+        position: absolute;
+        right: 0;
+        top: -100px;
+        width: 160px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid var(--color_yellow);
+    }
+    .pyts__right .pyts__proyecto .pyts__content hr {
+        display: none;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__type {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        right: 50px;
+        top: -230px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__type img {
+       height: 70px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .pyts__contenedor {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .pyts__fondo h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .pyts__fondo > div > div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .pyts__fondo img {
+        width: 200px;
+    }
+    .pyts__fondo .pyts__versus1 {
+       display: none;
+    }
+    .pyts__fondo {
+        height: 1000px;
+        background-size: 100% 200px;
+    }
+  
+    .pyts__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pyts__left {
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+    .pyts__left .pyts__filtros {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .pyts__left .pyts__filtros .pyts__ciclos {
+        width: 100%;
+    }
+    .pyts__left .pyts__filtros .pyts__areas, .pyts__left .pyts__filtros .pyts__semestres {
+        width: 50%;
+    }
+    .pyts__right {
+        width: 100%;   
+    }
+    .pyts__right .pyts__proyecto {
+        width: 100%;
+        float: none;
+        height: 280px;
+    }
+    .pyts__right .pyts__proyecto .pyts__img {
+        width: 30%;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__titulo {
+        right: 0;
+        top: -180%;
+        right: 30px;
+        width: 60%;
+        padding-bottom: 10px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__ponentes{
+        position: absolute;
+        top: -100%;
+        width: 60%;
+        right: 30px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__type {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        right: 50px;
+        top: -20px;
+    }
+    .pyts__right .pyts__proyecto .pyts__content .pyts__semestre strong{
+        font-size: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

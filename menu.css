@@ -1,0 +1,161 @@
+
+/*-------------------------------contenedor de menu  -------------------------------*/
+.isi__navbar {
+    position: absolute;
+    top: 30px;
+    right: 0px; /* modificar a -200px*/
+    width: 270px;
+    display: block;
+    transition: all .5s;
+        z-index: 1;
+
+}
+
+/*-------------------------- Icono control del menu ------------------------------*/
+.isi__menuControl {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    width: 270px;
+    height: 70px;
+    animation-delay: 0.05s;
+     transition: all .5s;
+}
+.isi__menuControl div:first-child {
+    width: 70px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.isi__menuControl div:first-child:hover {
+    cursor: pointer;
+}
+.isi__menuControl div:first-child a {
+    color: var(--color_morado);
+}
+.isi__menuControl img {
+    width: 40px;
+}
+.isi__menuControl .isi__isi {
+    font-weight: bold;
+    text-align: center;
+    color: var(--color_morado);
+    font-size: 14px;
+    width: 160px;
+}
+
+
+/*-------------------------- Icono control del menu ------------------------------*/
+
+/*-------------------------- menu ------------------------------*/
+.isi__menu {
+    list-style: none;
+    width: 270px;
+     transition: all .5s;
+}
+
+.isi__menu li {
+    padding: 15px 0px;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    background: var(--color_morado);;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    float: right;
+    position: relative;
+    right: 0px; /* modificar a 50 px*/
+    transition: all .2s;
+}
+.isi__menu li:first-child {
+    animation-delay: 0.1s;
+}
+.isi__menu li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.isi__menu li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.isi__menu li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.isi__menu li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.isi__menu li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.isi__menu li::after {
+    content: '';
+    border: 8px solid transparent;
+    position: absolute;
+    right: 5px;
+    transition: all .3s ease-out;
+}
+.isi__menu li:hover {
+    width: 210px;    
+}
+.isi__menu li:hover:after {
+    border-right-color: #fff;
+}
+.isi__menu .isi__active:after {
+    border-right-color: #fff;
+}
+.isi__menu li > span {
+    width: 5px;
+    height: 100%;
+    background: #fff;
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.isi__menu li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    position: relative;
+}   
+.isi__menu li a span {
+    display: none;
+    font-size: 15px;
+}
+
+
+.isi__navbar_hide {
+    width: 70px;
+    overflow: hidden;
+}
+.isi__navbar_hide .isi__menuControl {
+    right: -200px;
+}
+.isi__navbar_hide li {
+    right: 50px;
+}
+.isi__navbar_hide .isi__menu li span {
+    right: 150px;
+}
+.isi__navbar_hide .isi__menu li span img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+.isi__navbar_hide .isi__menu li::after {
+    right: 155px;
+    top: 50%;
+    margin-top: -10px;
+}
+.isi__navbar_hide .isi__menu li a strong {
+    display: none;
+}
+.isi__navbar_hide .isi__menu li a span {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+/*-------------------------- menu ------------------------------*/

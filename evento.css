@@ -1,0 +1,506 @@
+
+:root {
+  --color_morado: #DB0455;
+  --color_gris: #707070;
+  --color_yellow: #FFBE00;
+  --color_light_morado: #DF6895;
+    --color_lightGris: #ABB4B8;
+    --color_naranja: #ff5752;
+    --color_naranjaDark: #EB6749;
+    --color_rosado: #ff7976;
+}
+
+
+
+
+.evt__contenedor {
+    max-width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+.evt__fondo {
+    width: 100%;
+    position: relative;
+    animation: bgColor 40s linear infinite;
+}
+.evt__fondo > span {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+}
+.evt__fondo > span:nth-child(3n+1) {
+	background: transparent;
+	border: 5px solid #fff;
+}
+.evt__fondo > span:nth-child(1) {
+	top: 50%;
+	left: 20%;
+	animation: animate 10s linear infinite;
+}
+.evt__fondo > span:nth-child(2) {
+	top: 80%;
+	left: 40%;
+	animation: animate 12s linear infinite;
+}
+.evt__fondo > span:nth-child(3) {
+	top: 10%;
+	left: 65%;
+	animation: animate 15s linear infinite;
+}
+.evt__fondo > span:nth-child(4) {
+	top: 50%;
+	left: 70%;
+	animation: animate 6s linear infinite;
+}
+.evt__fondo > span:nth-child(5) {
+	top: 10%;
+	left: 30%;
+	animation: animate 9s linear infinite;
+}
+.evt__fondo span:nth-child(6) {
+	top: 90%;
+	left: 95%;
+	animation: animate 8s linear infinite;
+}
+.evt__fondo > span:nth-child(7) {
+	top: 80%;
+	left: 5%;
+	animation: animate 5s linear infinite;
+}
+.evt__fondo > span:nth-child(8) {
+	top: 35%;
+	left: 50%;
+	animation: animate 14s linear infinite;
+}
+.evt__fondo > span:nth-child(9) {
+	top: 5%;
+	left: 5%;
+	animation: animate 11s linear infinite;
+}
+.evt__fondo > span:nth-child(10) {
+	top: 25%;
+	left: 90%;
+	animation: animate 10s linear infinite;
+}
+.evt__fondo > span:nth-child(10) {
+	top: 25%;
+	left: 90%;
+}
+
+.evt__fondoContent {
+    padding: 100px 0 150px;
+    width: 60%;
+    margin: auto;
+    position: relative;
+}
+.evt__fondoContent h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.evt__fondoContent h1 small{
+    font-size: 30px;
+}
+.evt__fondoContent .evt__presentacion {
+    display: flex;
+}
+.evt__fondoContent .evt__presentacion .evt__download {
+    text-align: center;
+    color: #fff;
+    width: 30%;
+}
+.evt__fondoContent .evt__presentacion .evt__download span {
+    font-size: 70px;
+}
+.evt__fondoContent .evt__presentacion .evt__download .evt__link {
+    margin-top: 10px;
+}
+.evt__fondoContent .evt__presentacion .evt__download .evt__link a {
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.evt__fondoContent .evt__presentacion .evt__descripcion {
+    width: 70%;
+}
+.evt__fondoContent .evt__presentacion .evt__descripcion p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.evt__fondoContent .evt__date {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.evt__fondoContent .evt__date .evt__colgantes {
+    display: flex;
+    justify-content: space-around;
+}
+.evt__fondoContent .evt__date .evt__colgantes span{
+    width: 10px;
+    height: 20px;
+    border-left: 5px solid rgba(255,255,255,0.5);
+    border-right: 5px solid rgba(255,255,255,0.5);
+}
+.evt__fondoContent .evt__date .evt__fecha {
+    border: 10px solid rgba(255,255,255,0.5);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.evt__fondoContent .evt__date .evt__fecha > div:first-child {
+    font-size:60px;
+    margin-bottom: 20px;
+}
+.evt__fondoContent .evt__date .evt__fecha > div:last-child {
+    font-size: 20px;
+}
+
+
+
+.evt__evento {
+    display: flex;
+    position: relative;
+    top: -100px;
+    background: white;
+}
+
+.evt__left {
+     animation: borderBoxColor 40s linear infinite;
+    width: 70%;
+    padding: 0 30px 50px;
+    color: var(--color_gris);
+}
+.evt__left .evt__colgantes {
+    display: flex;
+    justify-content: space-around;
+}
+.evt__left .evt__colgantes span {
+    width: 20px;
+    height: 50px;
+     animation: borderColor 40s linear infinite;
+}
+.evt__left h1 {
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.evt__left h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+}
+.evt__left > div {
+    margin-bottom: 20px;
+}
+.evt__left .evt__texto {
+    font-size: 14px; 
+    letter-spacing: 1px;
+    padding-left: 20px;   
+}
+.evt__left .evt__personajes {
+    display: flex;
+    justify-content: space-between;
+}
+.evt__left .evt__personaje {
+    display: flex;
+}
+.evt__left .evt__personaje img {
+    width: 80px;
+}
+.evt__left .evt__content {
+    border-top: 2px solid var(--color_naranjaDark);
+    border-right: 2px solid var(--color_naranjaDark);
+    border-bottom: 2px solid var(--color_naranjaDark);
+    width: 100px;
+        padding: 5px;
+
+}
+.evt__left .evt__content h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.evt__left .evt__content p{
+    font-size: 13px;
+}
+.evt__left .evt__compartir{
+    margin-left: 20px;
+    background: var(--color_naranjaDark);
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+.evt__left .evt__compartir label {
+    font-size: 15px;
+}
+.evt__left .evt__compartir span{
+    font-size: 25px;
+}
+
+.evt__right {
+    margin-left: 30px;
+    width: 30%;
+    
+}
+.evt__right .evt__right_top {
+    animation: borderBoxColor 40s linear infinite;
+    width: 100%;
+    color: var(--color_gris);
+    padding: 0 30px 50px;
+}
+.evt__right .evt__colgantes {
+    display: flex;
+    justify-content: space-around;
+}
+.evt__right .evt__colgantes span {
+    width: 20px;
+    height: 50px;
+  animation: borderColor 40s linear infinite;
+}
+.evt__right h1 {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--color_naranjaDark);
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.evt__right table {
+    margin-top: 20px;
+}
+.evt__right table tr td {
+    padding-bottom: 10px;
+}
+.evt__right table tr td:first-child {
+    font-size: 40px;
+    width: 60px;
+    text-align: center;
+    
+}
+.evt__right table td strong {
+    font-size: 15px;
+}
+.evt__right table td div {
+    font-size: 14px;
+}
+@keyframes animate {
+	0% {
+		transform: scale(0) translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1) translateY(-100px) rotate(360deg);
+		opacity: 0;
+	}
+}
+@keyframes bgColor {
+	0% {
+       background: #f44336;
+	}
+	25% {
+        background: #03a9f4;
+	}
+	50% {
+         background: #9c27b0;
+	}
+	75% {
+        background: #DB0455;
+	}
+	100% {
+        background: #f44336;
+	}
+}
+@keyframes borderColor {
+	0% {
+        border-right: 10px solid #f44336;
+        border-left: 10px solid #f44336;
+	}
+	25% {
+         border-right: 10px solid #03a9f4;
+        border-left: 10px solid #03a9f4;
+	}
+	50% {
+         border-right: 10px solid #9c27b0;
+        border-left: 10px solid #9c27b0;
+	}
+	75% {
+         border-right: 10px solid #DB0455;
+        border-left: 10px solid #DB0455;
+	}
+	100% {
+         border-right: 10px solid #f44336;
+        border-left: 10px solid #f44336;
+	}
+}
+@keyframes borderBoxColor {
+	0% {
+         border: 2px solid #f44336;
+	}
+	25% {
+        border: 2px solid #03a9f4;
+	}
+	50% {
+        border: 2px solid #9c27b0;
+
+	}
+	75% {
+        border: 2px solid #DB0455;
+	}
+	100% {
+        border: 2px solid #f44336;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .evt__contenedor {
+        max-width: 90%;
+    }
+    .evt__left {
+        padding: 0 10px 30px;
+    }
+    .evt__left .evt__compartir{
+        width: 80%;
+        margin: auto;
+    }
+    .evt__right .evt__right_top {
+        padding: 0 10px 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .evt__contenedor {
+        max-width: 90%;
+        padding: 30px 0;
+    }
+    
+    .evt__fondoContent {
+        width: 80%;
+    }
+    .evt__fondoContent h1 {
+        font-size: 30px;
+    }
+    
+    .evt__left {
+        width: 60%;
+    }
+    .evt__left h1 {
+        margin-bottom: 10px;
+    }
+    .evt__left h3 {
+        margin: 30px 0 10px;
+    }
+    .evt__left .evt__personajes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .evt__left .evt__personaje {
+        margin-bottom: 10px;
+    }
+    .evt__left .evt__personaje img {
+        width: 100px;
+        height: 120px;
+    }
+    .evt__left .evt__content {
+        width: 180px;
+        padding: 5px;
+    }
+    .evt__right {
+        position: relative;
+        left: 0px;
+        width: 40%;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .evt__contenedor {
+        max-width: 100%;
+        padding: 30px;
+    }
+    .evt__evento {
+        flex-wrap: wrap;
+    }
+    .evt__left {
+        width: 100%;
+    }
+    .evt__left .evt__content {
+        border: none;
+    }
+    .evt__right {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 46px;
+    }
+   .evt__right .evt__colgantes span {
+    width: 20px;
+    height: 50px;
+      animation: borderColor 40s linear infinite;
+       margin-top: -50px;
+    }
+
+   
+}
+@media only screen and (max-width: 480px) {
+    .evt__contenedor {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+    .evt__fondoContent {
+        padding: 50px 0 100px;
+    }
+    .evt__fondoContent h1 {
+        font-size: 30px;
+        width: 50%;
+    }
+      .evt__left .evt__personaje {
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

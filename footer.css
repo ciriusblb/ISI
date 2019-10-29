@@ -1,0 +1,149 @@
+.isi__contenedorFooter {
+       width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/*----------------footer --------------------------------------*/
+footer {
+    width:100%;
+    background: url('img/footer.jpg');
+    background-size: cover;
+    position: relative;
+}
+footer h1 {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+footer h2 {
+    color: var(--color_morado);
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+}
+footer .isi__contactanos {
+    display: flex;
+}
+footer .isi__contactanos div {
+    padding: 0 50px;
+}
+footer .isi__contactanos h3 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+footer .isi__contactanos ul {
+    color: #fff;
+    list-style: none;
+}
+footer .isi__contactanos ul li {
+    padding: 20px 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+footer .isi__contactanos ul li span {
+    margin-right: 20px;
+    font-size: 18px;
+}
+footer .isi__contactanos img {
+    width: 500px;
+}
+footer .isi__line {
+    width: 100%;
+    height: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 50px 0;
+}
+footer .isi__creditos_and_sociales {
+    display: flex;
+    justify-content: space-between;
+}
+footer .isi__creditos {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+footer .isi__redes_sociales {
+    
+}
+footer .isi__redes_sociales a img {
+    width: 40px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+/*---------------- fin de footer --------------------------------------*/
+
+
+
+@media only screen and (max-width: 1024px) {
+    .isi__contenedorFooter {
+        width: 90%;
+    }
+    
+
+}
+@media only screen and (max-width: 768px) {
+    .isi__contenedorFooter {
+        width: 90%;
+        padding: 30px 0;
+    }
+    footer .isi__contactanos img {
+        width: 300px;
+        height: 100px;
+    }
+    footer .isi__contactanos ul li {
+    padding: 10px 0;
+    font-size: 14px;
+}
+}
+@media only screen and (max-width: 600px) {
+    .isi__contenedorFooter {
+        width: 100%;
+        padding: 30px;
+    }
+
+    footer h1 {
+        text-align: center;
+            margin-bottom: 20px;
+    }
+    footer h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer .isi__contactanos {
+        flex-wrap: wrap;
+    }
+    footer .isi__contactanos img {
+    width: 400px;
+            height: 150px;
+        margin: auto;
+
+}
+}
+@media only screen and (max-width: 480px) {
+    .isi__contenedorFooter {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    
+    footer .isi__contactanos img {
+        width: 250px;
+        height: 100px;
+        margin: auto;
+    }
+    footer .isi__contactanos h3 {
+        text-align: center;
+    }
+    footer .isi__contactanos ul {
+        margin-left: -10px;
+    }
+    footer .isi__creditos_and_sociales {
+       flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .isi__redes_sociales a img {
+        width: 40px;
+        margin-top: 20px;
+    }
+}
+
